@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Define variables to store coordinates of the points
+    float x1, y1, z1, x2, y2, z2;
+
+    // Prompt the user to enter coordinates of point 1
+    printf("Enter x coordinate of point 1: ");
+    scanf("%f", &x1);
+    printf("Enter y coordinate of point 1: ");
+    scanf("%f", &y1);
+    printf("Enter z coordinate of point 1: ");
+    scanf("%f", &z1);
+
+    // Prompt the user to enter coordinates of point 2
+    printf("Enter x coordinate of point 2: ");
+    scanf("%f", &x2);
+    printf("Enter y coordinate of point 2: ");
+    scanf("%f", &y2);
+    printf("Enter z coordinate of point 2: ");
+    scanf("%f", &z2);
+
+    // Calculate distance between the two points
+    float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2) + pow(z2 - z1, 2));
+
+    // Print the calculated distance
+    printf("Distance between the two points: %.2f\n", distance);
+
+    return 0;
+}
